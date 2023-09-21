@@ -79,6 +79,15 @@ const Sidebar = forwardRef<HTMLDivElement, SidebarProps>(
               whileTap={{ scale: 0.9 }}
               onClick={() => setIsOpen(!open)}>
               <Link
+                className={`${pathName === '/carriere' ? 'font-bold' : ''}`}
+                href={'/carriere'}>
+                Carriere
+              </Link>
+            </motion.div>
+            <motion.div
+              whileTap={{ scale: 0.9 }}
+              onClick={() => setIsOpen(!open)}>
+              <Link
                 className={`${pathName === '/contactme' ? 'font-bold' : ''}`}
                 href={'/contactme'}>
                 Contact Me
