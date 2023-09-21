@@ -43,7 +43,7 @@ const  Carriere=()=> {
 
             {cards.map((card, index) => (
               
-            <motion.div className=" mx-auto overflow-hidden mb-40 ">
+            <motion.div className=" mx-auto overflow-hidden mb-40 " key={index}>
               <motion.div className={`md:flex md:gap-36 lg:gap-56  ${index%2 ?'' : 'flex-row-reverse' }`}>
                 <motion.div className="md:shrink-0  rounded-2xl">
                   <img className="	 w-full object-cover sm:h-32 md:h-52 lg:h-64" src={card.image} alt="Modern building architecture" />
