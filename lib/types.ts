@@ -32,5 +32,16 @@ interface Repos {
   topics: string[];
   delay?: number;
 }
+interface Carrier {
+  id: number;
+  company: string;
+  title: string;
+  description: string;
+  topics: string[];
+  image: string;
+  delay?: number;
+  
+}
 
-export type { formFields, InputProps, SidebarProps, Repos };
+
+export type { formFields, InputProps, SidebarProps, Repos , Carrier};

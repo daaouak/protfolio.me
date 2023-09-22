@@ -96,9 +96,9 @@ export default function Home() {
           delay: 1,
         }}
         className='text-sm font-light lg:text-base 2xl:text-lg max-w-2xl'>
-        A self-taught web developer, crafting digital wonders basis with code.
-        Building dreams one pixel at a time, all while chasing the elusive bug
-        that dared to challenge my brilliance.
+        I'm Abdessamad Aalouwan, a self-taught web developer and software engineering student. 
+        I create digital wonders with code and love solving problems, 
+        (except my own 😣).
       </motion.p>
       <motion.p
         initial={{
@@ -114,7 +114,7 @@ export default function Home() {
           delay: 1.5,
         }}
         className='text-sm font-light lg:text-base 2xl:text-lg max-w-xs lg:max-w-xl'>
-        in other words, i&apos;m a problems solver (except my own 😣).
+        Explore my portfolio to see my work and journey.
       </motion.p>
       <motion.button
         initial='hidden'
