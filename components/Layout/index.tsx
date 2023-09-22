@@ -56,7 +56,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
         <div className='flex-1 flex justify-center'>
           {children}
           <Analytics />
-        </div>
+          </div>
         <Footer />
       </motion.div>
     )
