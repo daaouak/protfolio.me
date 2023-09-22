@@ -27,17 +27,20 @@ const Layout = ({ children }: { children: ReactNode }) => {
           className='text-3xl font-bold md:text-3xl xl:text-4xl mb-6 '
         >
           <motion.span
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+          
+
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
           >
             Welcome,
           </motion.span>
           <br />
           <motion.span
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1 }}
+           
+           initial={{ opacity: 0, y: 20 }}
+           animate={{ opacity: 1, y: 0 }}
+           transition={{ delay: 1.5 }}
             className='mt-6 ml-6'
           >
           to My Portfolio
