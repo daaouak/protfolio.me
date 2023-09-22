@@ -3,6 +3,7 @@ import Footer from '@/components/common/Footer';
 import Navbar from '@/components/common/Navbar';
 import { ReactNode } from 'react';
 import { motion } from 'framer-motion';
+import { Analytics } from '@vercel/analytics/react';
 
 const Layout = ({ children }: { children: ReactNode }) => {
   const [start, setStart] =  React.useState(true);
@@ -52,7 +53,10 @@ const Layout = ({ children }: { children: ReactNode }) => {
     ( 
       <motion.div className='container mx-auto h-full px-6 flex flex-col leading-relaxed tracking-wide'>  
         <Navbar />
-        <div className='flex-1 flex justify-center'>{children}</div>
+        <div className='flex-1 flex justify-center'>
+          {children}
+          <Analytics />
+        </div>
         <Footer />
       </motion.div>
     )
