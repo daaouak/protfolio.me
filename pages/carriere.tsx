@@ -89,8 +89,8 @@ const  Carriere=()=> {
               
             <motion.div className={` ${index%2 ?' border-l-2' : ' border-r-2' } border-b-2 dark:border-slate-100 border-slate-900 shadow-md shadow-slate-900/25 dark:shadow-slate-100/25 p-8   rounded-2xl  mx-auto overflow-hidden sm:mb-10 lg:mb-32 w-full`} key={index}>
               <motion.div className={`md:flex lg:flex md:gap-5 lg:justify-between md:justify-between rounded-lg  ${index%2 ?'' : 'flex-row-reverse' }`}>
-                <motion.div className="md:shrink-0  rounded-2xl md:h-60 md:max-w-md lg:h-80 lg:max-w-lg">
-                  <Image className=" w-full object-fill h-full  rounded-2xl" src={card.image} alt="Modern building architecture" />
+                <motion.div className="md:shrink-0 w-lg rounded-2xl md:h-60 md:max-w-md lg:h-80 lg:max-w-lg">
+                  <Image width={400} height={400} className=" w-full object-fill h-full  rounded-2xl" src={card.image} alt="Modern building architecture" />
                 </motion.div>
                 <motion.div className="leading-6 max-w-md">
                 <p className="text-lg leading-tight uppercase tracking-wide mt-2">🎯 {card.company} </p>
@@ -100,7 +100,7 @@ const  Carriere=()=> {
                     <motion.p className="my-6  text-slate-500 ">Started : 10/05/2023 </motion.p>
                     <motion.p className="my-6  text-slate-500 ">4 Months</motion.p>
                   </motion.div>
-                  <div className='flex items-center gap-2 lg:gap-3'>
+                  <div className='flex items-center gap-2 lg:gap-3 mt-3'>
         {card.topics.map((topic) => {
           switch (topic) {
             case 'javascript':
@@ -113,7 +113,7 @@ const  Carriere=()=> {
                     'https://developer.mozilla.org/en-US/docs/Web/JavaScript'
                   }>
                   {' '}
-                  <SiJavascript />
+                  <SiJavascript  />
                 </Link>
               );
             case 'c':

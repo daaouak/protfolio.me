@@ -3,4 +3,9 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
-module.exports = nextConfig
+// next.config.js
+module.exports = {nextConfig,
+  images: {
+    domains: ['gatsby-starter-portfolio-minimal.netlify.app'], // Add your domain here
+  },
+};
