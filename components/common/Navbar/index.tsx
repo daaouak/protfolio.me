@@ -47,9 +47,9 @@ const Navbar = () => {
         </motion.div>
         <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1 }}>
           <Link
-            className={`${router.pathname === '/carriere' ? 'font-bold' : ''}`}
-            href={'/carriere'}>
-            Carriere
+            className={`${router.pathname === '/career' ? 'font-bold' : ''}`}
+            href={'/career '}>
+            Career
           </Link>
         </motion.div>
         <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1 }}>

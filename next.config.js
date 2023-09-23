@@ -6,6 +6,6 @@ const nextConfig = {
 // next.config.js
 module.exports = {nextConfig,
   images: {
-    domains: ['gatsby-starter-portfolio-minimal.netlify.app'], // Add your domain here
+    domains: ['gatsby-starter-portfolio-minimal.netlify.app', "sendatrack.com","scontent.ftng2-1.fna.fbcdn.net"], // Add your domain here
   },
 };
