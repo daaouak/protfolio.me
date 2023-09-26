@@ -18,7 +18,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <title>AbdessamadPas</title>
         <meta
           name='description'
-          content='Shonjmoj is a full stack developer based in Morocco'
+          content='AbdessamadPas is a full stack developer based in Morocco'
         />
       </Head>
       <Layout>
