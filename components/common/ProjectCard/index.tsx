@@ -85,28 +85,7 @@ const ProjectCard: FC<Repos> = ({
                   <SiCoursera />
                 </Link>
               );
-              case 'html':
-                return (
-                  <Link
-                    target='_blank'
-                    shallow
-                    key={2}
-                    href={''}>
-                    {' '}
-                    <SiHtml5 />
-                  </Link>
-                );
-                case 'css':
-                  return (
-                    <Link
-                      target='_blank'
-                      shallow
-                      key={2}
-                      href={''}>
-                      {' '}
-                      <SiCss3 />
-                    </Link>
-                  );
+          
                   
             case 'cpp':
               return (
@@ -119,17 +98,7 @@ const ProjectCard: FC<Repos> = ({
                   <SiCplusplus />
                 </Link>
               );
-              case 'laravel':
-                return (
-                  <Link
-                    target='_blank'
-                    shallow
-                    key={3}
-                    href={'https://www.w3schools.com/cpp/'}>
-                    {' '}
-                    <SiLaravel />
-                  </Link>
-                );
+           
             case 'typescript':
               return (
                 <Link
@@ -141,61 +110,7 @@ const ProjectCard: FC<Repos> = ({
                   <SiTypescript />
                 </Link>
               );
-              case 'java':
-                return (
-                  <Link
-                    target='_blank'
-                    shallow
-                    key={4}
-                    href={'https://www.java.com'}>
-                    {' '}
-                    <FaJava />
-                  </Link>
-                );
-              case 'jquery':
-                return (
-                  <Link
-                    target='_blank'
-                    shallow
-                    key={4}
-                    href={'https://www.jquery.com'}>
-                    {' '}
-                    <SiJquery />
-                  </Link>
-                );
-                case 'uml':
-                return (
-                  <Link
-                    target='_blank'
-                    shallow
-                    key={4}
-                    href={'https://www.jquery.com'}>
-                    {' '}
-                    <SiUml />
-                  </Link>
-                );
-                case 'hibernate':
-                  return (
-                    <Link
-                      target='_blank'
-                      shallow
-                      key={4}
-                      href={'https://www.hibernate.org'}>
-                      {' '}
-                      <SiHibernate />
-                    </Link>
-                  );
-              case 'nodejs':
-                return (
-                  <Link
-                    target='_blank'
-                    shallow
-                    key={4}
-                    href={'https://www.node.org'}>
-                    {' '}
-                    <SiNodedotjs />
-                  </Link>
-                );
+             
             case 'react':
               return (
                 <Link
@@ -207,56 +122,14 @@ const ProjectCard: FC<Repos> = ({
                   <SiReact />
                 </Link>
               );
-              case 'react-native':
-              return (
-                <Link
-                  target='_blank'
-                  shallow
-                  key={5}
-                  href={'https://reactnative.dev/'}>
-                  {' '}
-                  <SiReact />
-                </Link>
-              );
-            case 'nextjs':
-              return (
-                <Link
-                  target='_blank'
-                  shallow
-                  key={6}
-                  href={'https://nextjs.org/'}>
-                  {' '}
-                  <SiNextdotjs />
-                </Link>
-              );
-              case 'vercel':
-              return (
-                <Link
-                  target='_blank'
-                  shallow
-                  key={6}
-                  href={'https://vercel.com/'}>
-                  {' '}
-                  <SiVercel />
-                </Link>
-              );
-              case 'heroku':
-              return (
-                <Link
-                  target='_blank'
-                  shallow
-                  key={6}
-                  href={'https://heroku.com/'}>
-                  {' '}
-                  <SiHeroku />
-                </Link>
-              );
+           
+          
             case 'tailwindcss':
               return (
                 <Link
                   target='_blank'
                   shallow
-                  key={7}
+                  key={6}
                   href={'https://tailwindcss.com/'}>
                   {' '}
                   <SiTailwindcss />
@@ -278,7 +151,7 @@ const ProjectCard: FC<Repos> = ({
                 <Link
                   target='_blank'
                   shallow
-                  key={7}
+                  key={8}
                   href={'https://docs.docker.com/'}>
                   {' '}
                   <SiDocker />
@@ -289,7 +162,7 @@ const ProjectCard: FC<Repos> = ({
                 <Link
                   target='_blank'
                   shallow
-                  key={7}
+                  key={9}
                   href={'https://www.framer.com/motion/'}>
                   {' '}
                   <SiFramer />
@@ -300,7 +173,7 @@ const ProjectCard: FC<Repos> = ({
                 <Link
                   target='_blank'
                   shallow
-                  key={8}
+                  key={10}
                   href={'https://www.nginx.com/'}>
                   {' '}
                   <SiNginx />
@@ -311,7 +184,7 @@ const ProjectCard: FC<Repos> = ({
                   <Link
                     target='_blank'
                     shallow
-                    key={8}
+                    key={11}
                     href={'https://www.mongodb.com/'}>
                     {' '}
                     <SiMongodb />
@@ -322,7 +195,7 @@ const ProjectCard: FC<Repos> = ({
                     <Link
                       target='_blank'
                       shallow
-                      key={8}
+                      key={12}
                       href={'https://www.jwt.io/'}>
                       {' '}
                       <SiJsonwebtokens />
@@ -333,12 +206,144 @@ const ProjectCard: FC<Repos> = ({
                     <Link
                       target='_blank'
                       shallow
-                      key={8}
+                      key={13}
                       href={'https://www.firebase.google.com/'}>
                       {' '}
                       <SiFirebase />
                     </Link>
                   );
+                  case 'html':
+                    return (
+                      <Link
+                        target='_blank'
+                        shallow
+                        key={14}
+                        href={''}>
+                        {' '}
+                        <SiHtml5 />
+                      </Link>
+                    );
+                    case 'css':
+                      return (
+                        <Link
+                          target='_blank'
+                          shallow
+                          key={15}
+                          href={''}>
+                          {' '}
+                          <SiCss3 />
+                        </Link>
+                      );
+                      case 'laravel':
+                        return (
+                          <Link
+                            target='_blank'
+                            shallow
+                            key={16}
+                            href={'https://www.w3schools.com/cpp/'}>
+                            {' '}
+                            <SiLaravel />
+                          </Link>
+                        );
+                        case 'java':
+                          return (
+                            <Link
+                              target='_blank'
+                              shallow
+                              key={17}
+                              href={'https://www.java.com'}>
+                              {' '}
+                              <FaJava />
+                            </Link>
+                          );
+                        case 'jquery':
+                          return (
+                            <Link
+                              target='_blank'
+                              shallow
+                              key={18}
+                              href={'https://www.jquery.com'}>
+                              {' '}
+                              <SiJquery />
+                            </Link>
+                          );
+                          case 'uml':
+                          return (
+                            <Link
+                              target='_blank'
+                              shallow
+                              key={19}
+                              href={'https://www.jquery.com'}>
+                              {' '}
+                              <SiUml />
+                            </Link>
+                          );
+                          case 'hibernate':
+                            return (
+                              <Link
+                                target='_blank'
+                                shallow
+                                key={20}
+                                href={'https://www.hibernate.org'}>
+                                {' '}
+                                <SiHibernate />
+                              </Link>
+                            );
+                        case 'nodejs':
+                          return (
+                            <Link
+                              target='_blank'
+                              shallow
+                              key={21}
+                              href={'https://www.node.org'}>
+                              {' '}
+                              <SiNodedotjs />
+                            </Link>
+                          );
+                          case 'react-native':
+                            return (
+                              <Link
+                                target='_blank'
+                                shallow
+                                key={22}
+                                href={'https://reactnative.dev/'}>
+                                {' '}
+                                <SiReact />
+                              </Link>
+                            );
+                            case 'nextjs':
+                              return (
+                                <Link
+                                  target='_blank'
+                                  shallow
+                                  key={23}
+                                  href={'https://nextjs.org/'}>
+                                  {' '}
+                                  <SiNextdotjs />
+                                </Link>
+                              );
+                              case 'vercel':
+                              return (
+                                <Link
+                                  target='_blank'
+                                  shallow
+                                  key={24}
+                                  href={'https://vercel.com/'}>
+                                  {' '}
+                                  <SiVercel />
+                                </Link>
+                              );
+                              case 'heroku':
+                              return (
+                                <Link
+                                  target='_blank'
+                                  shallow
+                                  key={25}
+                                  href={'https://heroku.com/'}>
+                                  {' '}
+                                  <SiHeroku />
+                                </Link>
+                              );
           }
         })}
       </div>

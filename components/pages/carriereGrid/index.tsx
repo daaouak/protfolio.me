@@ -1,5 +1,4 @@
-import React from 'react'
-import { motion } from 'framer-motion';
+import React, {useRef} from 'react'
 import Link from 'next/link';
 import { FC } from 'react';
 import Image from 'next/image';
@@ -42,6 +41,7 @@ import {
 import { FaJava } from "react-icons/fa";
 import { VscLinkExternal } from 'react-icons/vsc';
 import { Carrier } from '@/lib/types';
+import { motion , useAnimation, useInView} from 'framer-motion';
 
 const  CarrierGrid : FC<Carrier> = ({
   id,
@@ -55,14 +55,38 @@ const  CarrierGrid : FC<Carrier> = ({
   description,
   
 }) =>{
+  const ref = useRef(null)
+  const isInView = useInView(ref, {once: true})
+  const animation = useAnimation()
+  React.useEffect(() => {
+   if (isInView) {
+     animation.start('visible')}
+   
+  }, [isInView])
+  
   return (
   <motion.div
+  ref={ref}
+  key ={id}
 
-  initial={{ opacity: 0, y: 20 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ delay: delay, duration: 0.5 }}
+  variants={
+    {
+      hidden: {
+        opacity: 0,
+        y: 75,
+      },
+      visible: {
+        opacity: 1,
+        y: 0,
+      
+      }
+    }
+  }
+   initial="hidden"
+   animate={animation}
+   transition={{ delay: 0.25, duration: 0.5 }}
 
-  className={` ${id! % 2 ?' border-l-2' : ' border-r-2' } border-b-2 dark:border-slate-100 border-slate-900 shadow-md shadow-slate-900/25 dark:shadow-slate-100/25 p-8   rounded-2xl  mx-auto overflow-hidden sm:mb-10 lg:mb-32 w-full`} key={delay}>
+  className={` ${id! % 2 ?' border-l-2' : ' border-r-2' } border-b-2 dark:border-slate-100 border-slate-900 shadow-md shadow-slate-900/25 dark:shadow-slate-100/25 p-8   rounded-2xl  mx-auto overflow-hidden sm:mb-10 lg:mb-32 w-full`} >
     <motion.div className={`md:flex lg:flex md:gap-5 lg:justify-between md:justify-between rounded-lg  ${id! %2 ?'' : 'flex-row-reverse' }`}>
       <motion.div  whileHover={{ translateY: -2,   }} className=" md:shrink-0 w-lg rounded-2xl md:h-60 md:max-w-md lg:h-80 lg:max-w-lg lg:min-w-[420px]">
         <Image width={400} height={400} className=" w-full object-fill h-full  rounded-2xl" src={image} alt="Modern building architecture" />
@@ -96,7 +120,7 @@ const  CarrierGrid : FC<Carrier> = ({
                   <Link
                     target='_blank'
                     shallow
-                    key={4}
+                    key={2}
                     href={'https://www.jquery.com'}>
                     {' '}
                     <SiUml />
@@ -107,7 +131,7 @@ const  CarrierGrid : FC<Carrier> = ({
                 <Link
                   target='_blank'
                   shallow
-                  key={2}
+                  key={3}
                   href={'https://www.cprogramming.com/'}>
                   {' '}
                   <SiCoursera />
@@ -118,7 +142,7 @@ const  CarrierGrid : FC<Carrier> = ({
                 <Link
                   target='_blank'
                   shallow
-                  key={3}
+                  key={4}
                   href={'https://www.w3schools.com/cpp/'}>
                   {' '}
                   <SiCplusplus />
@@ -129,7 +153,7 @@ const  CarrierGrid : FC<Carrier> = ({
                 <Link
                   target='_blank'
                   shallow
-                  key={3}
+                  key={5}
                   href={'https://www.w3schools.com/cpp/'}>
                   {' '}
                   <SiHtml5 />
@@ -140,7 +164,7 @@ const  CarrierGrid : FC<Carrier> = ({
                   <Link
                     target='_blank'
                     shallow
-                    key={3}
+                    key={6}
                     href={'https://www.w3schools.com/cpp/'}>
                     {' '}
                     <SiMysql />
@@ -151,7 +175,7 @@ const  CarrierGrid : FC<Carrier> = ({
                   <Link
                     target='_blank'
                     shallow
-                    key={3}
+                    key={7}
                     href={'https://www.w3schools.com/cpp/'}>
                     {' '}
                     <SiLaravel />
@@ -162,7 +186,7 @@ const  CarrierGrid : FC<Carrier> = ({
                 <Link
                   target='_blank'
                   shallow
-                  key={3}
+                  key={8}
                   href={'https://www.w3schools.com/cpp/'}>
                   {' '}
                   <SiCss3 />
@@ -174,7 +198,7 @@ const  CarrierGrid : FC<Carrier> = ({
                 <Link
                   target='_blank'
                   shallow
-                  key={4}
+                  key={9}
                   href={'https://www.typescriptlang.org'}>
                   {' '}
                   <SiTypescript />
@@ -185,7 +209,7 @@ const  CarrierGrid : FC<Carrier> = ({
                   <Link
                     target='_blank'
                     shallow
-                    key={4}
+                    key={10}
                     href={'https://www.java.com'}>
                     {' '}
                     <FaJava />
@@ -197,7 +221,7 @@ const  CarrierGrid : FC<Carrier> = ({
                   <Link
                     target='_blank'
                     shallow
-                    key={4}
+                    key={11}
                     href={'https://www.jquery.com'}>
                     {' '}
                     <SiAdobexd />
@@ -209,7 +233,7 @@ const  CarrierGrid : FC<Carrier> = ({
                   <Link
                     target='_blank'
                     shallow
-                    key={4}
+                    key={12}
                     href={'https://www.jquery.com'}>
                     {' '}
                     <SiRedux />
@@ -220,7 +244,7 @@ const  CarrierGrid : FC<Carrier> = ({
                   <Link
                     target='_blank'
                     shallow
-                    key={4}
+                    key={13}
                     href={'https://www.jquery.com'}>
                     {' '}
                     <SiJquery />
@@ -231,7 +255,7 @@ const  CarrierGrid : FC<Carrier> = ({
                     <Link
                       target='_blank'
                       shallow
-                      key={4}
+                      key={14}
                       href={'https://www.hibernate.org'}>
                       {' '}
                       <SiHibernate />
@@ -242,7 +266,7 @@ const  CarrierGrid : FC<Carrier> = ({
                   <Link
                     target='_blank'
                     shallow
-                    key={4}
+                    key={15}
                     href={'https://www.node.org'}>
                     {' '}
                     <SiNodedotjs />
@@ -253,7 +277,7 @@ const  CarrierGrid : FC<Carrier> = ({
                     <Link
                       target='_blank'
                       shallow
-                      key={4}
+                      key={16}
                       href={'https://www.node.org'}>
                       {' '}
                       <SiFlutter />
@@ -264,7 +288,7 @@ const  CarrierGrid : FC<Carrier> = ({
                       <Link
                         target='_blank'
                         shallow
-                        key={4}
+                        key={17}
                         href={'https://www.node.org'}>
                         {' '}
                         <SiFigma />
@@ -275,7 +299,7 @@ const  CarrierGrid : FC<Carrier> = ({
                 <Link
                   target='_blank'
                   shallow
-                  key={5}
+                  key={18}
                   href={'https://reactjs.org/'}>
                   {' '}
                   <SiReact />
@@ -286,7 +310,7 @@ const  CarrierGrid : FC<Carrier> = ({
                 <Link
                   target='_blank'
                   shallow
-                  key={5}
+                  key={19}
                   href={'https://reactnative.dev/'}>
                   {' '}
                   <SiReact />
@@ -297,7 +321,7 @@ const  CarrierGrid : FC<Carrier> = ({
                 <Link
                   target='_blank'
                   shallow
-                  key={6}
+                  key={20}
                   href={'https://nextjs.org/'}>
                   {' '}
                   <SiNextdotjs />
@@ -308,7 +332,7 @@ const  CarrierGrid : FC<Carrier> = ({
                 <Link
                   target='_blank'
                   shallow
-                  key={6}
+                  key={21}
                   href={'https://vercel.com/'}>
                   {' '}
                   <SiVercel />
@@ -319,7 +343,7 @@ const  CarrierGrid : FC<Carrier> = ({
                 <Link
                   target='_blank'
                   shallow
-                  key={6}
+                  key={22}
                   href={'https://heroku.com/'}>
                   {' '}
                   <SiHeroku />
@@ -330,7 +354,7 @@ const  CarrierGrid : FC<Carrier> = ({
                 <Link
                   target='_blank'
                   shallow
-                  key={7}
+                  key={23}
                   href={'https://tailwindcss.com/'}>
                   {' '}
                   <SiTailwindcss />
@@ -341,7 +365,7 @@ const  CarrierGrid : FC<Carrier> = ({
                   <Link
                     target='_blank'
                     shallow
-                    key={7}
+                    key={24}
                     href={'https://www.djangoproject.com/'}>
                     {' '}
                     <SiDjango/>
@@ -352,7 +376,7 @@ const  CarrierGrid : FC<Carrier> = ({
                 <Link
                   target='_blank'
                   shallow
-                  key={7}
+                  key={25}
                   href={'https://docs.docker.com/'}>
                   {' '}
                   <SiDocker />
@@ -363,7 +387,7 @@ const  CarrierGrid : FC<Carrier> = ({
                 <Link
                   target='_blank'
                   shallow
-                  key={7}
+                  key={26}
                   href={'https://www.framer.com/motion/'}>
                   {' '}
                   <SiFramer />
@@ -374,7 +398,7 @@ const  CarrierGrid : FC<Carrier> = ({
                 <Link
                   target='_blank'
                   shallow
-                  key={8}
+                  key={27}
                   href={'https://www.nginx.com/'}>
                   {' '}
                   <SiNginx />
@@ -385,7 +409,7 @@ const  CarrierGrid : FC<Carrier> = ({
                   <Link
                     target='_blank'
                     shallow
-                    key={8}
+                    key={28}
                     href={'https://www.mongodb.com/'}>
                     {' '}
                     <SiMongodb />
@@ -396,7 +420,7 @@ const  CarrierGrid : FC<Carrier> = ({
                     <Link
                       target='_blank'
                       shallow
-                      key={8}
+                      key={29}
                       href={'https://www.jwt.io/'}>
                       {' '}
                       <SiJsonwebtokens />
@@ -407,7 +431,7 @@ const  CarrierGrid : FC<Carrier> = ({
                     <Link
                       target='_blank'
                       shallow
-                      key={8}
+                      key={30}
                       href={'https://www.firebase.google.com/'}>
                       {' '}
                       <SiFirebase />
