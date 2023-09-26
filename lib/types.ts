@@ -40,6 +40,8 @@ interface Carrier {
   topics: string[];
   image: string;
   delay?: number;
+  period?: string;
+  startedAt?: string;
   
 }
 

@@ -12,11 +12,8 @@ const ProjectsGrid = ({ repos }: { repos: Repos[] }) => {
             repo.name === 'Online-Assignment' ||
             repo.name === 'Rideshare-With-Mobile' ||
             repo.name === 'ScholarSys-Backend' ||
-            repo.name === 'ScholarSys-Frontend' ||
-            repo.name === 'Travel-Log-App'  ||
-            repo.name === 'Books-Library-Mobile'  ||
+            repo.name === 'Sendagest-Transport-Management' ||
             repo.name === 'Gestion-Notes-JAVA-HIBERNATE'  
-
          
           )
             return <ProjectCard key={repo.id} {...repo} delay={i * 0.1} />;

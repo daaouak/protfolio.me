@@ -31,6 +31,11 @@ import {
   SiFigma,
   SiAdobexd,
   SiRedux,
+  SiUml,
+  SiLaravel,
+  SiHtml5,
+  SiCss3,
+  SiMysql
 
 } from 'react-icons/si';
 
@@ -45,6 +50,9 @@ const  CarrierGrid : FC<Carrier> = ({
   topics,
   company,
   image,
+  period,
+  startedAt,
+  description,
   
 }) =>{
   return (
@@ -62,10 +70,10 @@ const  CarrierGrid : FC<Carrier> = ({
       <motion.div className="leading-6 max-w-md">
         <motion.p className="text-lg leading-tight uppercase tracking-wide mt-2">🎯 {company} </motion.p>
         <motion.p  className="my-2 text-xl  font-semibold">{title}</motion.p>
-        <motion.p className="my-5  text-slate-500">Looking to take your team away on a retreat to enjoy awesome food and take in some sunshine? We have a list of places to do just that.</motion.p>
+        <motion.p className="my-5  text-slate-500">{description}</motion.p>
         <motion.div className='flex gap-5'>
-          <motion.p className="my-6  text-slate-500 ">Started : 10/05/2023 </motion.p>
-          <motion.p className="my-6  text-slate-500 ">4 Months</motion.p>
+          <motion.p className="my-6  text-slate-500 ">Started : {startedAt} </motion.p>
+          <motion.p className="my-6  text-slate-500 ">{period}</motion.p>
         </motion.div>
         <motion.div className='flex items-center gap-2 lg:gap-3 mt-3'>
           {topics.map((topic) => {
@@ -83,6 +91,17 @@ const  CarrierGrid : FC<Carrier> = ({
                   <SiJavascript  />
                 </Link>
               );
+              case 'uml':
+                return (
+                  <Link
+                    target='_blank'
+                    shallow
+                    key={4}
+                    href={'https://www.jquery.com'}>
+                    {' '}
+                    <SiUml />
+                  </Link>
+                );
             case 'c':
               return (
                 <Link
@@ -105,6 +124,51 @@ const  CarrierGrid : FC<Carrier> = ({
                   <SiCplusplus />
                 </Link>
               );
+                case 'html':
+              return (
+                <Link
+                  target='_blank'
+                  shallow
+                  key={3}
+                  href={'https://www.w3schools.com/cpp/'}>
+                  {' '}
+                  <SiHtml5 />
+                </Link>
+              );
+              case 'sql':
+                return (
+                  <Link
+                    target='_blank'
+                    shallow
+                    key={3}
+                    href={'https://www.w3schools.com/cpp/'}>
+                    {' '}
+                    <SiMysql />
+                  </Link>
+                );
+              case 'laravel':
+                return (
+                  <Link
+                    target='_blank'
+                    shallow
+                    key={3}
+                    href={'https://www.w3schools.com/cpp/'}>
+                    {' '}
+                    <SiLaravel />
+                  </Link>
+                );
+              case 'css':
+              return (
+                <Link
+                  target='_blank'
+                  shallow
+                  key={3}
+                  href={'https://www.w3schools.com/cpp/'}>
+                  {' '}
+                  <SiCss3 />
+                </Link>
+              );
+
             case 'typescript':
               return (
                 <Link

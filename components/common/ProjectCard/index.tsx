@@ -24,7 +24,11 @@ import {
   SiVercel,
   SiHibernate,
   SiJquery  ,
-  SiCoffeescript
+  SiCoffeescript,
+  SiHtml5,
+  SiCss3,
+  SiLaravel,
+  SiUml,
 
 } from 'react-icons/si';
 import { FaJava } from "react-icons/fa";
@@ -81,6 +85,29 @@ const ProjectCard: FC<Repos> = ({
                   <SiCoursera />
                 </Link>
               );
+              case 'html':
+                return (
+                  <Link
+                    target='_blank'
+                    shallow
+                    key={2}
+                    href={''}>
+                    {' '}
+                    <SiHtml5 />
+                  </Link>
+                );
+                case 'css':
+                  return (
+                    <Link
+                      target='_blank'
+                      shallow
+                      key={2}
+                      href={''}>
+                      {' '}
+                      <SiCss3 />
+                    </Link>
+                  );
+                  
             case 'cpp':
               return (
                 <Link
@@ -92,6 +119,17 @@ const ProjectCard: FC<Repos> = ({
                   <SiCplusplus />
                 </Link>
               );
+              case 'laravel':
+                return (
+                  <Link
+                    target='_blank'
+                    shallow
+                    key={3}
+                    href={'https://www.w3schools.com/cpp/'}>
+                    {' '}
+                    <SiLaravel />
+                  </Link>
+                );
             case 'typescript':
               return (
                 <Link
@@ -123,6 +161,17 @@ const ProjectCard: FC<Repos> = ({
                     href={'https://www.jquery.com'}>
                     {' '}
                     <SiJquery />
+                  </Link>
+                );
+                case 'uml':
+                return (
+                  <Link
+                    target='_blank'
+                    shallow
+                    key={4}
+                    href={'https://www.jquery.com'}>
+                    {' '}
+                    <SiUml />
                   </Link>
                 );
                 case 'hibernate':
