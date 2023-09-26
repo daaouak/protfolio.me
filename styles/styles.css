@@ -36,7 +36,7 @@ body {
     grid-auto-flow: row;
     grid-template-columns: repeat(3, 15.625rem);
     overflow: visible;
-    padding: 0px;
+    padding: 10px;
 }}
 .interest {
   width: 14.625rem;
