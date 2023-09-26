@@ -35,7 +35,7 @@ const [visible, setVisivle] = React.useState(7);
                 <motion.ul className='overflow-x-auto     gap-2 weweMd wewelg  scrolli'>
                   {skills.slice(0, visible).map((skill, i) => (
                       <motion.li  
-                      key={skill.id} 
+                      key={i} 
                       className='interest'
                       initial={{ opacity: 0, x: -5 }}
                       animate={{ opacity: 1, x: 0 }}
@@ -68,7 +68,7 @@ const [visible, setVisivle] = React.useState(7);
             Experiences & Education
           </motion.h1>
           {   cards.map((card, i) => (
-                  <CarrierGrid   {...card} delay={i * 0.7} />
+                  <CarrierGrid key={i}  {...card} delay={i * 0.7} />
               ))  } 
     </motion.div>
   )
