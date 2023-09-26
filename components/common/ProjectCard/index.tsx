@@ -29,6 +29,8 @@ import {
   SiCss3,
   SiLaravel,
   SiUml,
+  SiFlutter,
+  
 
 } from 'react-icons/si';
 import { FaJava } from "react-icons/fa";
@@ -342,6 +344,17 @@ const ProjectCard: FC<Repos> = ({
                                   href={'https://heroku.com/'}>
                                   {' '}
                                   <SiHeroku />
+                                </Link>
+                              );
+                              case 'flutter':
+                              return (
+                                <Link
+                                  target='_blank'
+                                  shallow
+                                  key={26}
+                                  href={'https://flutter.dev/'}>
+                                  {' '}
+                                  <SiFlutter />
                                 </Link>
                               );
           }

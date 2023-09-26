@@ -5,7 +5,7 @@ import { FC } from "react";
 
 
 export async function getStaticProps() {
-  const res = await fetch("https://api.github.com/users/abdessamadpas/repos");
+  const res = await fetch("https://api.github.com/users/abdessamadpas/repos?per_page=100");
   const repos = await res.json();
 
   return {
