@@ -15,7 +15,7 @@ export default function Home() {
       setCurrentGreetingIndex(
         (prevIndex) => (prevIndex + 1) % greetings.length
       );
-    }, 5000);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, [greetings]);
