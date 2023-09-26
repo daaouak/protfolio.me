@@ -20,7 +20,7 @@ body {
   overflow-x: hidden;
   @apply dark:bg-slate-900 bg-slate-100 antialiased selection:bg-slate-900 selection:text-slate-100 dark:selection:bg-slate-100 dark:selection:text-slate-900 scroll-smooth;
 }
-.weweMd {
+.GridMd {
   display: grid;
   grid-template-columns: repeat(4, 15.625rem);
   grid-template-rows: repeat(2, auto);
@@ -31,7 +31,7 @@ body {
 }
 
 @media screen and  (min-width: 992px){
-.wewelg {
+.GridLg {
   display: grid;
     grid-auto-flow: row;
     grid-template-columns: repeat(3, 15.625rem);
@@ -52,14 +52,14 @@ body {
   border: 0.125rem solid rgb(51, 51, 51);
   border-radius: 1rem;
 }
-.scrolli::-webkit-scrollbar {
-  width:2px;
+.scrollStyles::-webkit-scrollbar {
+  width:2px !important;
 }
-.scrolli::-webkit-scrollbar-track {
+.scrollStyles::-webkit-scrollbar-track {
   background-color: rgb(255, 255, 255);
   border-radius: 8px;
 }
-.scrolli::-webkit-scrollbar-thumb {
+.scrollStyles::-webkit-scrollbar-thumb {
   border-radius: 8px;
   border: 1px solid rgba(0, 0, 0, 0.673);
   background-color: rgba(255, 255, 255, 0.5);

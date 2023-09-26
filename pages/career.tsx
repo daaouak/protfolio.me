@@ -31,8 +31,8 @@ const [visible, setVisivle] = React.useState(7);
             className=' text-2xl  md:text-3xl xl:text-4xl mt-3'>
             Skills
           </motion.h1>
-            <motion.div className='flex justify-center  ' whileInView={{ opacity: 1 }}  >
-                <motion.ul className='overflow-x-auto     gap-2 weweMd wewelg  scrolli'>
+            <motion.div className='flex justify-center   ' whileInView={{ opacity: 1 }}  >
+                <motion.ul className='overflow-x-auto     gap-2 GridMd GridLg  scrollStyles'>
                   {skills.slice(0, visible).map((skill, i) => (
                       <motion.li  
                       key={i} 
