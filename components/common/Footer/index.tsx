@@ -12,9 +12,8 @@ const Footer = () => {
         y: 0,
       }}
       transition={{ delay: 0.4, type: 'spring' }}
-      className='text-xs lg:text-base font-light self-center py-4 md:py-6 xl:py-8 w-full flex justify-center items-center gap-x-1'>
-      <span className='font-semibold'>©{date.getFullYear()}</span> Aalouwan
-      Abdessamad | All Rights Reserved
+      className='text-xs lg:text-base font-light self-center py-4  w-full flex justify-center items-center gap-x-1 text-gray-500' >
+      <span className='font-semibold'>©{date.getFullYear()}</span> Aalouwan Abdessamad | Crafting the Web with Passion 🚀
     </motion.footer>
   );
 };

@@ -4,6 +4,7 @@ import { submitButtonVariants } from '@/lib/variants';
 import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion';
 import React, { useState } from 'react';
+import { AiOutlinePhone ,AiOutlineMail} from 'react-icons/ai';
 
 const Contact = () => {
   const [fields, setFields] = useState<formFields>({});
@@ -66,15 +67,41 @@ const Contact = () => {
   };
 
   return (
-    <div className='container flex flex-col items-center justify-center gap-6 md:gap-12 xl:gap-20'>
+    <motion.div className=' w-full  flex xl:flex-row md:flex-row flex-col items-center justify-center px-9 gap-8  '>
+      <motion.div  className=' flex flex-col justify-start gap-6'
+      initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3 }}
+      >
+        <motion.h1
+              
+              className='text-xl font-bold md:text-xl xl:text-xl'>
+                General inquiries
+        </motion.h1>
+        <motion.div className='flex flex-col gap-5'>
+          <div className='flex gap-4'>
+            <AiOutlineMail className='text-2xl' />
+            <a href='mailto:aalouwan.pro@gmail.com' className='text-slate-900 dark:text-slate-100'>
+              aalouwan.pro@gmail.com
+            </a>
+          </div>
+          <div className='flex gap-4'>
+            <AiOutlinePhone className='text-2xl' />
+            <a href='tel:+212 6 55 93 84 52' className='text-slate-900 dark:text-slate-100'>
+              +212 6 55 93 84 52
+            </a>
+          </div>
+        </motion.div>
+      </motion.div> 
+      <div className='w-full flex flex-col items-center justify-center max-w-5xl '>
       {isValid === null ? (
         <>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className='text-4xl font-bold md:text-5xl xl:text-6xl'>
-            Hit me up!
+            className='text-xl font-bold md:text-xl xl:text-xl'>
+            Request information
           </motion.h1>
           <form
             className='w-full lg:w-[60%] xl:w-[50%] grid md:grid-cols-2 gap-2 lg:gap-4'
@@ -124,7 +151,9 @@ const Contact = () => {
       ) : (
         <EmailValidation isValid={isValid} />
       )}
-    </div>
+      </div>
+    </motion.div>
+   
   );
 };
 

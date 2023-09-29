@@ -6,7 +6,7 @@ import { TbBrandGithub, TbBrandLinkedin, TbBrandTwitter } from "react-icons/tb";
 const Socials: FC<{ className?: string }> = ({ className }) => {
   return (
     <div
-      className={`hidden text-2xl xl:text-3xl md:flex gap-x-10 xl:gap-x-8 ${className}`}
+      className={`hidden text-2xl md:flex gap-x-10 xl:gap-x-8 ${className}`}
     >
       <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1 }}>
         <Link href={"https://github.com/abdessamadpas"} target='_blank'>

@@ -15,7 +15,8 @@ const [visible, setVisivle] = React.useState(7);
       whileInView={{ opacity: 1 }}
       transition={{ delay: 0.1 }} 
       className=' flex flex-col gap-24  md:justify-center w-full max-w-6xl'>
-      <motion.h1
+        <div className='flex flex-col gap-5'>
+            <motion.h1
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3 }}
@@ -51,7 +52,9 @@ const [visible, setVisivle] = React.useState(7);
           </motion.ul>
       </motion.div>
 
-      <motion.h1
+        </div>
+    <div className='flex flex-col gap-5'>
+        <motion.h1
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3 }}
@@ -61,6 +64,8 @@ const [visible, setVisivle] = React.useState(7);
       { cards.map((card, i) => (
           <CarrierGrid key={i}  {...card} delay={i * 0.7} />
         )) } 
+    </div>
+    
     </motion.div>
   )
 }

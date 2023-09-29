@@ -5,7 +5,7 @@ import { useEffect, useMemo, useState } from 'react';
 
 export default function Home() {
   const greetings = useMemo(() => {
-    return ['Wewe','Hello', 'ⴰⵣⵓⵍ', 'Bonjour', 'Salam'];
+    return ['Hello', 'ⴰⵣⵓⵍ', 'Bonjour', 'Salam'];
   }, []);
   const [currentGreetingIndex, setCurrentGreetingIndex] = useState(0);
   const [mounted, setMounted] = useState(false);
@@ -15,7 +15,7 @@ export default function Home() {
       setCurrentGreetingIndex(
         (prevIndex) => (prevIndex + 1) % greetings.length
       );
-    }, 3000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, [greetings]);
@@ -95,10 +95,9 @@ export default function Home() {
           duration: 0.5,
           delay: 1,
         }}
-        className='text-sm font-light lg:text-base 2xl:text-lg max-w-2xl'>
+        className='text-sm font-light lg:text-base 2xl:text-xl max-w-2xl'>
         I'm Abdessamad Aalouwan, a self-taught web developer and software engineering student. 
-        I create digital wonders with code and love solving problems, 
-        (except my own 😣).
+        I create digital wonders with code and love solving problems,
       </motion.p>
       <motion.p
         initial={{
@@ -124,8 +123,8 @@ export default function Home() {
         variants={resumeButtonVariants}
         className='text-xs px-4 py-2 md:text-sm 2xl:text-base border rounded-md border-slate-900 bg-slate-900 text-slate-100 
           dark:bg-slate-100 dark:text-slate-900 dark:shadow-slate-100/5 shadow-slate-900/50 shadow-lg'>
-        <Link href='/CV-AALOUWAN-ENG.pdf' target='_blank'>
-          Resume
+        <Link href='/CV-AALOUWAN.pdf' target='_blank'>
+        Check out my resume
         </Link>
       </motion.button>
     </main>

@@ -19,7 +19,7 @@ const ThemeSwitch = () => {
       onClick={() => {
         theme === 'light' ? setTheme('dark') : setTheme('light');
       }}
-      className='text-xl lg:text-2xl xl:text-3xl z-10'>
+      className='text-xl lg:text-2xl xl:text-2xl z-10'>
       <AnimatePresence mode='wait'>
         {theme === 'light' ? (
           <motion.div

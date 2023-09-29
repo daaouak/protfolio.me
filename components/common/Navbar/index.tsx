@@ -28,9 +28,9 @@ const Navbar = () => {
       initial={{ opacity: 0, y: -30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.4, type: 'spring' }}
-      className='py-4 md:py-6 xl:py-8 flex items-center z-10 justify-between gap-x-4 lg:px-24 xl:px-56'>
+      className='py-4  flex items-center z-10 justify-between gap-x-4 lg:px-24 xl:px-56'>
       <ThemeSwitch />
-      <div className='md:flex justify-evenly hidden md:w-[80%] xl:w-[70%] xl:text-lg'>
+      <div className='md:flex justify-evenly hidden md:w-[80%] xl:w-[70%] text-sm  text-gray-500'>
         <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1 }}>
           <Link
             className={`${router.pathname === '/' ? 'font-bold' : ''}`}

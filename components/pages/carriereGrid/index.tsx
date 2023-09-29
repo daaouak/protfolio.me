@@ -86,7 +86,7 @@ const  CarrierGrid : FC<Carrier> = ({
    animate={animation}
    transition={{ delay: 0.25, duration: 0.5 }}
 
-  className={` ${id! % 2 ?' border-l-2' : ' border-r-2' } border-b-2 dark:border-slate-100 border-slate-900 shadow-md shadow-slate-900/25 dark:shadow-slate-100/25 p-8   rounded-2xl  mx-auto overflow-hidden sm:mb-10 lg:mb-32 w-full`} >
+  className={` border-b-2 dark:border-slate-100 shadow-md shadow-slate-900/25 dark:shadow-slate-100/25 p-8   rounded-2xl  mx-auto overflow-hidden sm:mb-10 lg:mb-32 w-full`} >
     <motion.div className={`md:flex lg:flex md:gap-5 lg:justify-between md:justify-between rounded-lg  ${id! %2 ?'' : 'flex-row-reverse' }`}>
       <motion.div  whileHover={{ translateY: -2,   }} className=" md:shrink-0 w-lg rounded-2xl md:h-60 md:max-w-md lg:h-80 lg:max-w-lg lg:min-w-[420px]">
         <Image width={400} height={400} className=" w-full object-fill h-full  rounded-2xl" src={image} alt="Modern building architecture" />
