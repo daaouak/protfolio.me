@@ -104,7 +104,7 @@ const Contact = () => {
             Request information
           </motion.h1>
           <form
-            className='w-full lg:w-[60%] xl:w-[50%] grid md:grid-cols-2 gap-2 lg:gap-4'
+            className='lg:w-[60%] xl:w-[50%] grid md:grid-cols-2 gap-2 lg:gap-4'
             onSubmit={formOnSubmit()}>
             <Input
               name='email'
