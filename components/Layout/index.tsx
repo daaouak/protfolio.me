@@ -51,7 +51,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
     )
     :
     ( 
-      <motion.div className='container mx-auto h-full flex flex-col leading-relaxed tracking-wide'>  
+      <motion.div className='container px-6 mx-auto h-full flex flex-col leading-relaxed tracking-wide'>  
         <Navbar />
         <div className='flex-1 flex justify-center'>
           {children}
