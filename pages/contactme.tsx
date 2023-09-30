@@ -93,7 +93,7 @@ const Contact = () => {
           </div>
         </motion.div>
       </motion.div> 
-      <div className='w-full flex flex-col items-center justify-center max-w-5xl '>
+      <div className='w-full flex flex-col gap-2 items-center justify-center max-w-5xl '>
       {isValid === null ? (
         <>
           <motion.h1
