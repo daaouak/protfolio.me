@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider attribute='class'>
       <Head>
-        <link rel='icon' href='/me.ico' className='rounded-full' />
+        <link rel='icon' href='/me.ico'  type="image/x-icon"  sizes="16*16" />
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link rel='preconnect' href='https://fonts.gstatic.com' />
         <link
