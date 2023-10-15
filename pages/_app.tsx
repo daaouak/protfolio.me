@@ -15,13 +15,13 @@ export default function App({ Component, pageProps }: AppProps) {
           href='https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700&display=swap'
           rel='stylesheet'
         />
-        <title>AbdessamadPas</title>
+        <title>Abdessamad AALOUWAN</title>
         <meta
           name='description'
-          content='AbdessamadPas is a full stack developer based in Morocco.'
+          content='Abdessamad AALOUWAN is a full stack developer based in Morocco.'
         />
         <meta name='author' content='abdessamad aalouwan' />
-        <meta name='keywords' content='AbdessamadPas, Abdessamad, Pas, aalouwan, Aalouwan, abdessamadAalouwan,abdessamadpas.tech' />
+        <meta name='keywords' content='AbdessamadPas, Abdessamad,abdessamad aalouwan, Pas, aalouwan, Aalouwan, abdessamadAalouwan,abdessamadpas.tech' />
         <meta name='theme-color' content='#ffffff' />
         <meta name='twitter:card' content='summary' />
         <meta name='twitter:site' content='@abdessamad aalouwan' />
