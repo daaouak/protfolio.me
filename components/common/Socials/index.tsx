@@ -8,7 +8,7 @@ const Socials: FC<{ className?: string }> = ({ className }) => {
     <div className={`hidden text-2xl md:flex gap-x-10 xl:gap-x-8 ${className}`}>
       <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1 }}>
         <Link href={"https://github.com/abdessamadpas"} target="_blank">
-          <TbBrandGithub />
+          <TbBrandGithub aria-label="GitHub Profile" />
         </Link>
       </motion.div>
       <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1 }}>
@@ -16,7 +16,7 @@ const Socials: FC<{ className?: string }> = ({ className }) => {
           href={"https://www.linkedin.com/in/abdessamad-aalouwan/"}
           target="_blank"
         >
-          <TbBrandLinkedin />
+          <TbBrandLinkedin aria-label="Linkedin Profile" />
         </Link>
       </motion.div>
     </div>
