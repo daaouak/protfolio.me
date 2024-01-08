@@ -4,6 +4,7 @@ import Navbar from "@/components/common/Navbar";
 import { ReactNode } from "react";
 import { motion } from "framer-motion";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const Layout = ({ children }: { children: ReactNode }) => {
   const [start, setStart] = React.useState(true);
@@ -50,6 +51,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
       <div className="flex-1 flex justify-center">
         {children}
         <Analytics />
+        <SpeedInsights />
       </div>
       <Footer />
     </motion.div>
