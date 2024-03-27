@@ -35,6 +35,10 @@ import {
   SiHtml5,
   SiCss3,
   SiMysql,
+  SiAngular,
+  SiExpress,
+  SiSass,
+  SiGit,
 } from "react-icons/si";
 
 import { FaJava } from "react-icons/fa";
@@ -139,6 +143,18 @@ const CarrierGrid: FC<Carrier> = ({
                       <SiUml />
                     </Link>
                   );
+                  case"expressJs":
+                  return (
+                    <Link
+                      target="_blank"
+                      shallow
+                      key={2}
+                      href={"https://www.jquery.com"}
+                    >
+                      {" "}
+                      <SiExpress />
+                    </Link>
+                  );
                 case "c":
                   return (
                     <Link
@@ -211,7 +227,18 @@ const CarrierGrid: FC<Carrier> = ({
                       <SiCss3 />
                     </Link>
                   );
-
+                    case "Angular":
+                  return (
+                    <Link
+                      target="_blank"
+                      shallow
+                      key={8}
+                      href={"https://www.w3schools.com/cpp/"}
+                    >
+                      {" "}
+                      <SiAngular />
+                    </Link>
+                  );
                 case "typescript":
                   return (
                     <Link
@@ -466,6 +493,30 @@ const CarrierGrid: FC<Carrier> = ({
                       <SiJsonwebtokens />
                     </Link>
                   );
+                  case "saas" :
+                    return (
+                      <Link
+                        target="_blank"
+                        shallow
+                        key={30}
+                        href={"https://www.saas.com"}
+                      >
+                        {" "}
+                        <SiSass />
+                      </Link>
+                    );
+                    case "git" :
+                    return (
+                      <Link
+                        target="_blank"
+                        shallow
+                        key={30}
+                        href={"https://www.git.com"}
+                      >
+                        {" "}
+                        <SiGit />
+                      </Link>
+                    );
                 case "firebase":
                   return (
                     <Link
