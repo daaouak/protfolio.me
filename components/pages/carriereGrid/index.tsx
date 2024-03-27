@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import Link from "next/link";
 import { FC } from "react";
-import Image from "next/image";
 
 import {
   SiCoursera,
@@ -42,9 +41,10 @@ import {
 } from "react-icons/si";
 
 import { FaJava } from "react-icons/fa";
-import { VscLinkExternal } from "react-icons/vsc";
 import { Carrier } from "@/lib/types";
 import { motion, useAnimation, useInView } from "framer-motion";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const CarrierGrid: FC<Carrier> = ({
   id,
@@ -94,12 +94,14 @@ const CarrierGrid: FC<Carrier> = ({
           whileHover={{ translateY: -2 }}
           className=" md:shrink-0 w-lg rounded-2xl md:h-60 md:max-w-md lg:h-80 lg:max-w-lg lg:min-w-[420px]"
         >
-          <Image
+          <LazyLoadImage
+            effect="opacity"
+            src={image}
+            alt="Modern building architecture"
             width={400}
             height={400}
             className=" w-full object-fill h-full  rounded-2xl"
-            src={image}
-            alt="Modern building architecture"
+            
           />
         </motion.div>
         <motion.div className="leading-6 max-w-md">
