@@ -27,10 +27,10 @@ const ProjectsGrid = ({ repos }: { repos: Repos[] }) => {
         You can find more project{"'"}s here{" "}
         <Link
           target="_blank"
-          href={"https://github.com/abdessamadpas"}
+          href={"https://github.com/daaouak"}
           className="font-semibold hover:underline transition duration-200"
         >
-          github/abdessamadpas
+          github/daaouak
         </Link>
       </motion.span>
     </div>

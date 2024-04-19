@@ -49,10 +49,10 @@ const Contact = () => {
     }
     emailjs
       .sendForm(
-        process.env.NEXT_PUBLIC_SERVICE_ID!,
-        process.env.NEXT_PUBLIC_TEMPLATE_ID!,
+        "service_lg9duye",
+        "template_rym5ebd",
         e.target,
-        process.env.NEXT_PUBLIC_USER_ID
+        'RSx1jnIZcozMdSwMg',
       )
       .then(
         (res) => {
@@ -81,19 +81,19 @@ const Contact = () => {
           <div className="flex gap-4">
             <AiOutlineMail className="text-2xl" />
             <a
-              href="mailto:aalouwan.pro@gmail.com"
+              href="mailto:daaouakfayssal@gmail.com"
               className="text-slate-900 dark:text-slate-100"
             >
-              aalouwan.pro@gmail.com
+              daaouakfayssal@gmail.com
             </a>
           </div>
           <div className="flex gap-4">
             <AiOutlinePhone className="text-2xl" />
             <a
-              href="tel:+212 6 55 93 84 52"
+              href="tel:+212 6 89 71 92 99"
               className="text-slate-900 dark:text-slate-100"
             >
-              +212 6 55 93 84 52
+              +212 6 89 71 92 99
             </a>
           </div>
         </motion.div>

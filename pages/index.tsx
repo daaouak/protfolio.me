@@ -99,9 +99,7 @@ export default function Home() {
         }}
         className="text-sm font-light lg:text-base 2xl:text-xl max-w-2xl"
       >
-        I'm Abdessamad Aalouwan, a self-taught web developer and software
-        engineering student. I create digital wonders with code and love solving
-        problems,
+        I'm Fayssal Daaouak, a dedicated and passionate Software Engineer with a keen interest in developing innovative software solutions. With a strong foundation in coding and system design, I thrive on challenging myself with complex problems and aim to deliver robust, scalable, and efficient software applications. My expertise spans various programming languages and technologies, enabling me to adapt and excel in diverse development environments. I am committed to continuous learning and applying best practices to contribute effectively to projects and collaborate successfully with teams.
       </motion.p>
       <motion.p
         initial={{
@@ -129,7 +127,7 @@ export default function Home() {
         className="text-xs px-4 py-2 md:text-sm 2xl:text-base border rounded-md border-slate-900 bg-slate-900 text-slate-100 
           dark:bg-slate-100 dark:text-slate-900 dark:shadow-slate-100/5 shadow-slate-900/50 shadow-lg"
       >
-        <Link href="/CV-AALOUWAN.pdf" target="_blank">
+        <Link href="/CV-Daaouak.pdf" target="_blank">
           Check out my resume
         </Link>
       </motion.button>
